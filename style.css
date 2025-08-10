@@ -3,106 +3,89 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: #f5f5f5;
+    color: #333;
 }
 
-/* Navbar Horizontal */
-nav {
-    background-color: #000000;
+/* Navbar */
+.navbar {
+    background-color: #6a0dad;
+    padding: 10px 0;
+}
+.navbar ul {
+    list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0; 
     padding: 0;
 }
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+.navbar ul li {
+    margin: 0 15px;
 }
-nav ul li {
-    margin: 0;
-}
-nav ul li a {
-    display: block;
-    padding: 15px 25px;
+.navbar ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-}
-nav ul li a:hover {
-    background-color: #7d4edb;
     transition: 0.3s;
+}
+.navbar ul li a:hover {
+    color: #ffd700;
 }
 
 /* Container */
 .container {
     max-width: 900px;
-    margin: 20px auto;
+    margin: auto;
     padding: 20px;
-}
-
-/* Box styling for sections */
-section {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
 }
 
-/* Profile */
+/* Profile Section */
 .profile {
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-start;
+    gap: 20px;
+    
 }
 .profile img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 120px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-.profile h1 {
-    margin: 0;
-    color: #000000;
 }
 
-/* Skills list */
-ul.skills {
-    list-style: square;
-    margin-left: 20px;
+/* Headings */
+h1 {
+    color: #6a0dad;
+}
+h2 {
+    color: #6a0dad;
+    border-bottom: 5px solid #6a0dad;
+    padding-bottom: 5px;
 }
 
-/* Tables */
+/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
 }
-table, th, td {
+table th, table td {
+    padding: 10px;
     border: 1px solid #ccc;
 }
-th {
-    background-color: #000223;
+table th {
+    background-color: #6a0dad;
     color: white;
-    padding: 10px;
-}
-td {
-    padding: 8px;
 }
 
-/* Links & Contact styling */
+/* Links */
 a {
-    color: #000000;
-    text-decoration: none;
+    color: #6a0dad;
 }
 a:hover {
     text-decoration: underline;
-}
-#kontak p {
-    margin: 8px 0;
-}
-#kontak a {
-    font-weight: bold;
 }
